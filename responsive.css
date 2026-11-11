@@ -1,25 +1,52 @@
 @media (min-width: 320px) and (max-width: 480px){
+   .blog-menu .blog-icon .icon-menu .img{
+        display: none;
+    }
     .blog-menu .blog-icon .icon-menu button{
-        width: 25px;
-        height: 25px;
+        width: 26px;
+        height: 26px;
     }
     .blog-menu .blog-icon{
         top:10px;
         padding : 0px 10px;
     }
-    .blog-menu .blog-icon .icon-media a {
-        margin-left: 15px;
+    .blog-media {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
     }
-    .blog-menu .blog-icon .icon-media a img{
-        width: 17px;
-        object-fit: contain;    
-    }
+
+.blog-icon .blog-media .icon-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.blog-icon .icon-media a .icon {
+    width: 20px;
+    height: 20px;
+}
+.blog-media .btn-search {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+}
+.blog-media .searching.active {
+    width: 200px;
+}
+.blog-media .searching input {
+    padding: 0px 5px;
+    font-size: 14px;
+}
+    /* -------- */
     .blog-menu .menu.active {
         width: 100%;
     }
-    .blog-menu .menu .icon-bit h4 {
+    .blog-menu .menu .icon-bit img {
         margin-left: 0px;
-        font-size: 0.9rem;
     }
 
     .menus ul li a {
@@ -128,24 +155,45 @@
     }
 }
 @media (min-width: 481px) and (max-width: 767px){
+    .blog-menu .blog-icon .icon-menu .img{
+        display: none;
+    }
     .blog-menu .blog-icon .icon-menu button{
-        width: 30px;
-        height: 30px;
+        width: 26px;
+        height: 26px;
     }
     .blog-menu .blog-icon{
-        top:15px;
+        top:10px;
         padding : 0px 10px;
     }
-    .blog-menu .blog-icon .icon-media a {
-        margin-left: 25px;
+    .blog-media {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
     }
-    .blog-menu .blog-icon .icon-media a img{
-        width: 20px;
-        object-fit: contain;    
-    }
-    .blog-menu .icon-menu button{
-        font-size: 2rem;
-    }
+.blog-icon .blog-media .icon-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.blog-icon .icon-media a .icon {
+    width: 20px;
+    height: 20px;
+}
+.blog-media .btn-search {
+    width: 20px;
+    height: 20px;
+
+}
+.blog-media .searching.active {
+    width: 250px;
+}
+.blog-media .searching input {
+    padding: 0px 5px;
+    font-size: 14px;
+}
     .blog-menu .menu.active {
         width: 50%;
     }
@@ -264,24 +312,45 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px){
-   .blog-menu .blog-icon .icon-menu button{
-        width: 40px;
-        height: 40px;
-    }
-      .blog-menu .blog-icon{
-        top:10px;
-        padding : 0px 25px;
-    }
-    .blog-menu .blog-icon .icon-media a {
-        margin-left: 50px;
-    }
-    .blog-menu .blog-icon .icon-media a img{
-        width: 20px;
-        object-fit: contain;    
-    }
-    .blog-menu .icon-menu button{
-        font-size: 2rem;
-    }
+  .blog-menu .blog-icon .icon-menu .img{
+    width:100px;
+}
+.blog-menu .blog-icon .icon-menu button{
+    width: 26px;
+    height: 26px;
+}
+.blog-menu .blog-icon{
+    top:20px;
+    padding : 0px 10px;
+}
+.blog-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.blog-icon .blog-media .icon-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.blog-icon .icon-media a .icon {
+    width: 20px;
+    height: 20px;
+}
+.blog-media .btn-search {
+    width: 20px;
+    height: 20px;
+}
+.blog-media .searching.active {
+    width: 250px;
+}
+.blog-media .searching input {
+    padding: 0px 5px;
+    font-size: 14px;
+}
+
     .blog-menu .menu.active {
         width: 50%;
     }
@@ -370,6 +439,44 @@
     }
 }
 @media (min-width: 1025px) and (max-width: 1280px){
+   .blog-menu .blog-icon .icon-menu h4{
+    font-size: 1.4rem;
+}
+.blog-menu .blog-icon .icon-menu button{
+    width: 26px;
+    height: 26px;
+}
+.blog-menu .blog-icon{
+    top:20px;
+    padding : 0px 10px;
+}
+.blog-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.blog-icon .blog-media .icon-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.blog-icon .icon-media a .icon {
+    width: 22px;
+    height: 22px;
+}
+.blog-media .btn-search {
+    width: 22px;
+    height: 22px;
+}
+.blog-media .searching.active {
+    width: 270px;
+}
+.blog-media .searching input {
+    padding: 1px 10px;
+    font-size: 1rem;
+}
     .blog-menu .menu.active {
         width: 40%;
     }
