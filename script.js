@@ -23,21 +23,44 @@ const searching  = document.querySelector(".searching");
 const openSearch = document.querySelector(".open-search");
 const bitSearch  = document.querySelector(".bit-search");
 
+let isAnimating = false;
+
 openSearch.addEventListener("click", () =>{
-    media.style.display = "none";
+  if (isAnimating) return;
+
+    isAnimating = true;
+
+    media.classList.add ("hide");
     searching.classList.add("active");
-    bitSearch.style.display = "block";
-    openSearch.style.display= "none";
+    bitSearch.classList.remove("hide");
+    openSearch.classList.add("hide");
 })
 bitSearch.addEventListener("click", () =>{
-    // media.style.display = "block";
+
+  if (isAnimating) return;
+
+    isAnimating = true;
+
     searching.classList.remove("active");
-    bitSearch.style.display = "none";
-    openSearch.style.display= "block";
+    bitSearch.classList.add("hide");
+    openSearch.classList.remove("hide");
     setTimeout(() => {
-        media.style.display = "block";
+        media.classList.remove("hide");
     }, 1000);
 })
+
+
+searching.addEventListener("transitionend", (event) => {
+
+    if (event.propertyName !== "width") return;
+
+    if (!searching.classList.contains("active")) {
+        media.style.display = "flex";
+    }
+
+    isAnimating = false;
+
+});
 
 
 // /-----------

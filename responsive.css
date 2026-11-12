@@ -347,10 +347,9 @@
     width: 250px;
 }
 .blog-media .searching input {
-    padding: 0px 5px;
+    padding: 2px 5px;
     font-size: 14px;
 }
-
     .blog-menu .menu.active {
         width: 50%;
     }
