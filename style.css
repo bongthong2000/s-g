@@ -20,18 +20,20 @@ body{
 .main-container {
     width: 100%;
     overflow: hidden;
+    background-color: white;
 } 
  .slider {
     display: flex;
     width: max-content;
     animation: slide 50s linear infinite;
     will-change: transform;
+    gap:50px;
 }
 .sliders {
     display: flex;
     flex: 0 0 auto;
     width: max-content;
-    gap: 0;
+    gap:50px;
 
 }
 .slideImg {
